@@ -1,0 +1,53 @@
+###############################################################################
+#                                                                             #
+# This is a configuration template with all the required parameters to run a  #
+# report via Five9 API.                                                       #
+#                                                                             #
+# All the parameters are required                                             #
+#                                                                             #
+# All the parameters should be specified with no quotes, i.e.:                #
+# PARAM_NAME = param_value                                                    #
+#                                                                             #
+# Rows that start with symbol "#" are considered comments.                    #
+#                                                                             #
+###############################################################################
+
+
+# API URI, you can leave this as is, nodo NOT add anything after "...user="
+BASEURI = https://api.five9.com/wsadmin/v2/AdminWebService?wsdl&user=
+
+# credentials of Five9 user (Administrator role is required to make requests to Five9 API)
+# Five9 Administrator login
+FIVE9USERNAME = 
+# Five9 Administrator password
+FIVE9PASSWORD = 
+
+# folder name in Five9 Reports & Dashboard that contains the report you want to run
+FOLDERNAME = 
+# report name in Five9 Reports & Dashboard you want to run
+REPORTNAME = 
+
+# ftp server information you want to deliver the report to
+# hostname or ip address
+FTP_HOST = 
+# username
+FTP_USER = 
+# password
+FTP_PASS = 
+# destination folder
+FTP_FLDR = 
+
+# report filename that will be generated and sent to FTP (omit .csv at the end, it will be added automatically)
+REPORT_FILENAME = 
+
+# reporting period, the report will be generated from 12:00:00 AM <X> days ago to 11:59:59 PM yesterday
+REPORTING_PERIOD_NUMBER_OF_DAYS = 1
+
+# timezone you want to use for specifying reporting period
+REPORTING_PERIOD_TIMEZONE = US/Pacific 
+
+# directory on a local server where you're running this script to store report files
+SPOOL = ./
+
+# debug? set to 1 if you want to print debug messages to console
+DEBUG = 0
